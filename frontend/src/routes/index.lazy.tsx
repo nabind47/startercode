@@ -1,15 +1,11 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
 
-import CustomHeader from "@/components/global/custom-header";
+import HomePage from "@/pages/home";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
 });
 
 function Index() {
-  return (
-    <div className="p-2">
-      <CustomHeader />
-    </div>
-  );
+  return <HomePage />;
 }
