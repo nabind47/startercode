@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
 
-import { getPosts } from "../../services/api";
+import { getPosts } from "@/services/api";
 
 export const Route = createFileRoute("/notes/")({
   component: RouteComponent,
